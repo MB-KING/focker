@@ -389,3 +389,10 @@ a:hover {
 #myBtn:hover {
   background-color: #404040;
 }
+
+.sponser {
+    direction: ltr;
+    display: block;
+    position: relative;
+    left: 40%;
+  }
