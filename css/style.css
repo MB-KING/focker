@@ -396,3 +396,7 @@ a:hover {
     position: relative;
     left: 40%;
   }
+
+  .absolute {
+    position: absolute;
+  }
