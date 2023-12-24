@@ -390,13 +390,9 @@ a:hover {
   background-color: #404040;
 }
 
-.sponser {
+.sponsor {
     direction: ltr;
     display: block;
     position: relative;
-    left: 40%;
-  }
-
-  .absolute {
-    position: absolute;
+    float: inherit;
   }
