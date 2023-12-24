@@ -391,7 +391,7 @@ a:hover {
 }
 
 .sponsor {
-    direction: ltr;
+    direction: rtl;
     display: block;
     position: relative;
     float: inherit;
