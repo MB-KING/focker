@@ -1,5 +1,13 @@
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import "@/styles/prism.css";
+import ThemeProvider from "@/components/ThemeProvider";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 const vazirmatn = localFont({
   src: [
@@ -56,12 +64,22 @@ export const metadata = {
   title: "Focker",
   description:
     "Focker is a service for accessing Docker images without restrictions or sanctions.",
+  keywords: ["Docker", "Images", "Service", "Focker"],
+  authors: [{ name: "Your Name" }],
+  robots: "index, follow",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa">
-      <body className={vazirmatn.variable}>{children}</body>
+    <html lang="en">
+      <body className={`${vazirmatn.variable} ${inter.variable} ltr`}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
